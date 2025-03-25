@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter UI Portfolio</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">Flutter UI Portfolio</div>
+        <ul class="menu">
+            <li><a href="#" class="active" data-target="dashboard-content"><span>Main</span></a></li>
+            <li><a href="#" data-target="design1-content"><span>Design 1</span></a></li>
+            <li><a href="#" data-target="design2-content"><span>Design 2</span></a></li>
+            <li><a href="#" data-target="design3-content"><span>Design 3</span></a></li>
+            <li><a href="#" data-target="design4-content"><span>Design 4</span></a></li>
+            <li><a href="#" data-target="design5-content"><span>Design 5</span></a></li>
+        </ul>
+    </div>
+    
+    <div class="main-content">
+        <!-- Dashboard Content -->
+        <div id="dashboard-content">
+            <h1 class="glass-card">Flutter UI Portfolio</h1>
+            
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>5</h3>
+                    <p>UI Designs</p>
+                </div>
+                <div class="stat-card">
+                    <h3>2025</h3>
+                    <p>Year Created</p>
+                </div>
+            </div>
+            
+            <div class="glass-card">
+                <h2>Portfolio Overview</h2>
+                <div class="portfolio-summary">
+                    <p>Welcome to my Flutter UI design portfolio! This showcase features 5 distinct mobile application UI designs created with Flutter. Each design demonstrates different styling techniques, layouts, and user experience approaches.</p>
+                    <p>Browse through the designs using the sidebar menu. For each design, you'll find screenshots, descriptions, and links to download the APK to experience the interface on your own device.</p>
+                    <p>All designs are created with attention to modern UI principles, accessibility standards, and performance optimization.</p>
+                </div>
+            </div>
+            
+            <div class="glass-card">
+                <h2>Featured Designs</h2>
+                <div class="featured-designs">
+                    <div class="design-preview">
+                        <img src="asset/images/design1-preview.jpg" alt="Design 1 Preview">
+                        <h3>E-Commerce App</h3>
+                        <p>A clean, modern shopping experience</p>
+                        <button class="action-btn view-design-btn" data-target="design1-content">View Details</button>
+                    </div>
+                    <div class="design-preview">
+                        <img src="asset/images/design2-preview.jpg" alt="Design 2 Preview">
+                        <h3>Task Manager</h3>
+                        <p>Productivity with beautiful UI</p>
+                        <button class="action-btn view-design-btn" data-target="design2-content">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Design 1 Content -->
+        <div id="design1-content" class="hidden">
+            <h1 class="glass-card">E-Commerce App</h1>
+            <div class="design-container glass-card">
+                <div class="design-showcase">
+                    <div class="design-images">
+                        <img src="asset/images/design1-full.jpg" alt="E-Commerce App Screenshot" class="main-screenshot">
+                        <div class="thumbnail-gallery">
+                            <img src="asset/images/design1-thumb1.jpg" alt="Home Screen" class="thumbnail">
+                            <img src="asset/images/design1-thumb2.jpg" alt="Product Page" class="thumbnail">
+                            <img src="asset/images/design1-thumb3.jpg" alt="Cart Screen" class="thumbnail">
+                            <img src="asset/images/design1-thumb4.jpg" alt="Checkout Flow" class="thumbnail">
+                        </div>
+                    </div>
+                    <div class="design-details">
+                        <h2>E-Commerce App</h2>
+                        <p class="design-date">March 2025</p>
+                        <div class="design-description">
+                            <p>A modern e-commerce application with a focus on product visualization and seamless checkout experience. The UI features a clean, minimalist design with carefully selected typography and color scheme to enhance product imagery.</p>
+                            <h3>Features:</h3>
+                            <ul>
+                                <li>Animated product transitions</li>
+                                <li>Custom scroll physics</li>
+                                <li>Haptic feedback on interactions</li>
+                                <li>Dark mode support</li>
+                                <li>Accessible design with proper contrast</li>
+                            </ul>
+                            <h3>Technologies:</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Riverpod</span>
+                                <span class="tech-tag">Custom Animations</span>
+                                <span class="tech-tag">Responsive UI</span>
+                            </div>
+                        </div>
+                        <div class="download-section">
+                            <a href="#" class="download-btn">Download APK</a>
+                            <a href="#" class="source-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Design 2 Content -->
+        <div id="design2-content" class="hidden">
+            <h1 class="glass-card">Task Manager</h1>
+            <div class="design-container glass-card">
+                <div class="design-showcase">
+                    <div class="design-images">
+                        <img src="asset/images/design2-full.jpg" alt="Task Manager Screenshot" class="main-screenshot">
+                        <div class="thumbnail-gallery">
+                            <img src="asset/images/design2-thumb1.jpg" alt="Home Screen" class="thumbnail">
+                            <img src="asset/images/design2-thumb2.jpg" alt="Task Creation" class="thumbnail">
+                            <img src="asset/images/design2-thumb3.jpg" alt="Calendar View" class="thumbnail">
+                            <img src="asset/images/design2-thumb4.jpg" alt="Statistics" class="thumbnail">
+                        </div>
+                    </div>
+                    <div class="design-details">
+                        <h2>Task Manager</h2>
+                        <p class="design-date">February 2025</p>
+                        <div class="design-description">
+                            <p>A productivity application designed to help users manage their tasks efficiently with an intuitive interface. The UI emphasizes visual hierarchy and quick access to important functions.</p>
+                            <h3>Features:</h3>
+                            <ul>
+                                <li>Custom task categories with color coding</li>
+                                <li>Drag and drop task reordering</li>
+                                <li>Progress tracking visualizations</li>
+                                <li>Calendar integration</li>
+                                <li>Notification system with custom animations</li>
+                            </ul>
+                            <h3>Technologies:</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Bloc</span>
+                                <span class="tech-tag">Custom Painters</span>
+                                <span class="tech-tag">Local Notifications</span>
+                            </div>
+                        </div>
+                        <div class="download-section">
+                            <a href="#" class="download-btn">Download APK</a>
+                            <a href="#" class="source-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Design 3 Content -->
+        <div id="design3-content" class="hidden">
+            <h1 class="glass-card">Weather App</h1>
+            <div class="design-container glass-card">
+                <div class="design-showcase">
+                    <div class="design-images">
+                        <img src="asset/images/design3-full.jpg" alt="Weather App Screenshot" class="main-screenshot">
+                        <div class="thumbnail-gallery">
+                            <img src="asset/images/design3-thumb1.jpg" alt="Current Weather" class="thumbnail">
+                            <img src="asset/images/design3-thumb2.jpg" alt="Weekly Forecast" class="thumbnail">
+                            <img src="asset/images/design3-thumb3.jpg" alt="Location Search" class="thumbnail">
+                            <img src="asset/images/design3-thumb4.jpg" alt="Weather Map" class="thumbnail">
+                        </div>
+                    </div>
+                    <div class="design-details">
+                        <h2>Weather App</h2>
+                        <p class="design-date">January 2025</p>
+                        <div class="design-description">
+                            <p>A visually rich weather application that displays meteorological data in an engaging and intuitive way. The design emphasizes visual storytelling through animations and transitions tied to weather conditions.</p>
+                            <h3>Features:</h3>
+                            <ul>
+                                <li>Dynamic backgrounds based on weather conditions</li>
+                                <li>Animated weather icons</li>
+                                <li>Parallax scrolling effect</li>
+                                <li>Interactive weather maps</li>
+                                <li>Location-based weather alerts</li>
+                            </ul>
+                            <h3>Technologies:</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Provider</span>
+                                <span class="tech-tag">Lottie Animations</span>
+                                <span class="tech-tag">Geolocation</span>
+                            </div>
+                        </div>
+                        <div class="download-section">
+                            <a href="#" class="download-btn">Download APK</a>
+                            <a href="#" class="source-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Design 4 Content -->
+        <div id="design4-content" class="hidden">
+            <h1 class="glass-card">Music Player</h1>
+            <div class="design-container glass-card">
+                <div class="design-showcase">
+                    <div class="design-images">
+                        <img src="asset/images/design4-full.jpg" alt="Music Player Screenshot" class="main-screenshot">
+                        <div class="thumbnail-gallery">
+                            <img src="asset/images/design4-thumb1.jpg" alt="Library View" class="thumbnail">
+                            <img src="asset/images/design4-thumb2.jpg" alt="Now Playing" class="thumbnail">
+                            <img src="asset/images/design4-thumb3.jpg" alt="Playlist Management" class="thumbnail">
+                            <img src="asset/images/design4-thumb4.jpg" alt="Equalizer" class="thumbnail">
+                        </div>
+                    </div>
+                    <div class="design-details">
+                        <h2>Music Player</h2>
+                        <p class="design-date">March 2025</p>
+                        <div class="design-description">
+                            <p>An elegant music player application with a focus on visual aesthetics and smooth transitions. The UI dynamically adapts to album artwork colors to create a cohesive and immersive listening experience.</p>
+                            <h3>Features:</h3>
+                            <ul>
+                                <li>Dynamic color extraction from album art</li>
+                                <li>Customizable visualizer</li>
+                                <li>Gesture-based controls</li>
+                                <li>Crossfade transitions</li>
+                                <li>Mini-player with expanded functionality</li>
+                            </ul>
+                            <h3>Technologies:</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">GetX</span>
+                                <span class="tech-tag">Audio Processing</span>
+                                <span class="tech-tag">Custom Shaders</span>
+                            </div>
+                        </div>
+                        <div class="download-section">
+                            <a href="#" class="download-btn">Download APK</a>
+                            <a href="#" class="source-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Design 5 Content -->
+        <div id="design5-content" class="hidden">
+            <h1 class="glass-card">Fitness Tracker</h1>
+            <div class="design-container glass-card">
+                <div class="design-showcase">
+                    <div class="design-images">
+                        <img src="asset/images/design5-full.jpg" alt="Fitness Tracker Screenshot" class="main-screenshot">
+                        <div class="thumbnail-gallery">
+                            <img src="asset/images/design5-thumb1.jpg" alt="Activity Dashboard" class="thumbnail">
+                            <img src="asset/images/design5-thumb2.jpg" alt="Workout Tracking" class="thumbnail">
+                            <img src="asset/images/design5-thumb3.jpg" alt="Nutrition Log" class="thumbnail">
+                            <img src="asset/images/design5-thumb4.jpg" alt="Progress Charts" class="thumbnail">
+                        </div>
+                    </div>
+                    <div class="design-details">
+                        <h2>Fitness Tracker</h2>
+                        <p class="design-date">February 2025</p>
+                        <div class="design-description">
+                            <p>A comprehensive fitness application designed to track workouts, nutrition, and progress. The UI utilizes data visualization techniques to present complex health metrics in an easily digestible format.</p>
+                            <h3>Features:</h3>
+                            <ul>
+                                <li>Interactive progress charts</li>
+                                <li>Workout animation guides</li>
+                                <li>Customizable dashboard</li>
+                                <li>Health metric visualization</li>
+                                <li>Workout plan builder with drag-and-drop interface</li>
+                            </ul>
+                            <h3>Technologies:</h3>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">MobX</span>
+                                <span class="tech-tag">Chart Animations</span>
+                                <span class="tech-tag">Health API Integration</span>
+                            </div>
+                        </div>
+                        <div class="download-section">
+                            <a href="#" class="download-btn">Download APK</a>
+                            <a href="#" class="source-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="copyright">
+                © 2025 Flutter UI Portfolio. All Rights Reserved.
+            </div>
+        </footer>
+    </div>
+    
+    <script src="asset/js/main.js"></script>
+</body>
+</html>

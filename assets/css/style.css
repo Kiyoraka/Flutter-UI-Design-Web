@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0B63E5, #03A8F4);
+    min-height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .logo {
+    margin-bottom: 30px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sidebar .menu {
+    list-style: none;
+}
+
+.sidebar .menu li {
+    margin-bottom: 15px;
+}
+
+.sidebar .menu a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.sidebar .menu a:hover,
+.sidebar .menu a.active {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-card {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.stat-card h3 {
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+.portfolio-summary {
+    line-height: 1.6;
+    padding: 10px 0;
+}
+
+.portfolio-summary p {
+    margin-bottom: 15px;
+}
+
+.featured-designs {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.design-preview {
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.design-preview:hover {
+    transform: translateY(-5px);
+}
+
+.design-preview img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.design-preview h3 {
+    padding: 15px 15px 5px 15px;
+    font-size: 18px;
+}
+
+.design-preview p {
+    padding: 0 15px 15px 15px;
+    opacity: 0.8;
+}
+
+.design-preview .action-btn {
+    margin: 0 15px 15px 15px;
+}
+
+.action-btn, .download-btn, .source-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.action-btn:hover, .download-btn:hover, .source-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.download-btn {
+    background: rgba(52, 152, 219, 0.8);
+    margin-right: 10px;
+}
+
+.download-btn:hover {
+    background: rgba(52, 152, 219, 1);
+}
+
+.source-btn {
+    background: rgba(46, 204, 113, 0.8);
+}
+
+.source-btn:hover {
+    background: rgba(46, 204, 113, 1);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.design-container {
+    padding: 0;
+    overflow: hidden;
+}
+
+.design-showcase {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.design-images {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.main-screenshot {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.thumbnail-gallery {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.design-details {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.design-details h2 {
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+
+.design-date {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.design-description {
+    margin-bottom: 30px;
+}
+
+.design-description p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.design-description h3 {
+    margin: 20px 0 10px 0;
+    font-size: 18px;
+}
+
+.design-description ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.design-description li {
+    margin-bottom: 5px;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tech-tag {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.download-section {
+    display: flex;
+    margin-top: 30px;
+}
+
+.footer {
+    margin-top: auto;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.copyright {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .stats {
+        flex-direction: column;
+    }
+    
+    .featured-designs {
+        flex-direction: column;
+    }
+    
+    .design-showcase {
+        flex-direction: column;
+    }
+    
+    .design-details {
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}
