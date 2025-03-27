@@ -212,7 +212,7 @@ body {
 .main-screenshot {
     width: 100%;
     height: auto;
-    max-width: 420px; /* This maintains the ratio when scaled down */
+    max-width: 370px; /* This maintains the ratio when scaled down */
     aspect-ratio: 9/16;
     object-fit: contain; /* This ensures the image isn't cropped */
     border-radius: 10px;
